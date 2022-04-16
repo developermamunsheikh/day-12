@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.full-website{
+    width: 1240px;
+    margin: auto;
+}
+/* Menu */
+.menu{
+    background-color: black;
+}
+.menu ul{
+    text-align: center;
+    
+}
+.menu ul li{
+    display: inline-block;
+    /* border-left: 1px solid white; */
+    margin-left: -4px;
+    position: relative;  
+}
+.menu ul li a{
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    background: #000;
+}
+.menu ul li:hover>a{
+    color: black;
+    background-color: blue;
+}
+
+/* Dropdown menu */
+.menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.menu ul li:hover>ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    
+    
+}
+
+.menu ul li ul li{
+    display: block;
+    background-color: blue;
+    border-top: 1px solid red;
+    position: relative;
+
+}
+
+
+.menu ul li ul li ul{
+left: 100%;
+}
+.menu ul li ul li{
+
+}
+
+
+/* <!-- Banner Section --> */
+
+.banner{
+    width: 100%;
+    margin: auto;
+}
+.banner .banner-img {
+    background-image: url(./young-mens.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 281px 0px;
+    text-align: center;
+}
+
+.banner .banner-img h2{
+    color: black;
+    background-color: white;
+    text-align: center;display: inline;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.banner .banner-img h3{
+    background-color: white;
+    color: black;
+    margin-top: 18px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.banner .banner-img a {
+    text-decoration: none;
+    background: #FF0000;
+    color: white;
+    /* display: block; */
+    padding: 11px;
+    margin-top: 10px;
+}
+.banner .banner-img a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+}
+
+/* <!-- Banner Section end --> */
+
+
+/* List style type */
+.list-outside{
+    
+    max-width: 100%;
+    height: 350px;
+    padding: 30px 0px;
+    background-color: rgba(255, 255, 255, 0.548);
+    border-top: 1px solid #EBEBEB ;
+    border: 1px solid #EBEBEB ;
+    margin-top: 25px;
+}
+.list-outside h1{
+    text-align: center;
+    padding: 10px;
+}
+.list-outside ul li{
+    list-style-position:outside ;
+}
+.list-inside{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+   list-style-position: inside;
+    margin-top: 40px;
+    background-color: rgba(221, 221, 221, 0.158);
+  
+}
+.list-inside h1 {
+    text-align: center;
+    padding: 8px 0px;
+}
+
+/* List style type */
+.subscribe{
+    text-align: center;
+    background-color: #F2F2F2;
+    padding: 40px 0px;
+    margin-top: 40px;
+}
+
+.subscribe input{
+width: 70%;
+padding: 10px;
+border: none;
+border-bottom: 1px solid black !important;
+}
+.subscribe #subs {
+    color: white;
+    background-color: #FF0000;
+    text-decoration: none;
+    padding: 9px 30px;
+    margin-left: -5px;
+    
+}
+.subscribe #subs:hover{
+    background-color: white;
+    border: 2px solid red;
+    color: black;
+}
+
+.col-sec {
+    max-width: 100%;
+    margin: auto;
+    padding: 30px 0px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 40px;
+    border: 1px dashed rgba(0, 0, 0, 0.13);
+}
+.col-sec h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.list-style-col-1 {
+    display: inline-block;
+    width: 320px;
+    list-style: lower-roman;
+    margin-left: 130px;
+}
+
+ol#roman {
+    list-style: lower-roman;
+}
+.list-style-col-2{
+    display: inline-block;
+    width:320px ;   
+}
+ul#squere {
+    list-style: square;
+}
+
+.list-style-col-3{
+    display: inline-block;
+    width:360px ; 
+}
+ol.alpha{
+    list-style: lower-alpha;  
+}
+
+
+/* Footer Section */
+.footer-sec{
+    background-color: black;
+}
+.footer-sec p{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.footer-sec ul{
+    text-align: center;
+}
+.footer-sec ul li{
+    display: inline-block;
+    padding: 5px 20px;
+   
+}
+.footer-sec ul li a{
+  border-radius: 50%;
+   display: inline-block;
+   margin-right: 5px;
+   width: 50px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 25px;
+   background: rgb(212, 194, 194);
+   transition: .2s;
+   
+}
+.footer-sec ul li a:hover{
+    background-color: #fff;
+}
